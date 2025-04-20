@@ -1,13 +1,7 @@
 name: Autograding Tests
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+'on':
+  - push
+  - repository_dispatch
 permissions:
   checks: write
   actions: read
